@@ -1,0 +1,27 @@
+{
+  "functions": {
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**",
+      "**/tests/**",
+      "**/lib/tests/**"
+    ],
+    "predeploy": [
+      "npm --prefix \"$RESOURCE_DIR\" run lint",
+      "npm --prefix \"$RESOURCE_DIR\" run build"
+    ],
+    "source": ".",
+    "runtime": "nodejs14"
+  },
+  "emulators": {
+    "functions": {
+      "host": "moneycatcha.local",
+      "port": 8080
+    },
+    "ui": {
+      "host": "moneycatcha.local",
+      "enabled": true
+    }
+  }
+}

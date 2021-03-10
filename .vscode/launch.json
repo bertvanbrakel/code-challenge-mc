@@ -1,0 +1,22 @@
+{
+    "configurations": [
+      {
+        "name": "Launch Chrome - verracio",
+        "request": "launch",
+        "type": "pwa-chrome",
+        "url": "http://moneycatcha.local:4873",
+        "webRoot": "${workspaceFolder}"
+      },
+      {
+        "name": "Launch Chrome - 8080",
+        "request": "launch",
+        "type": "chrome",
+        "url": "http://moneycatcha.local:8080",
+        "webRoot": "${workspaceFolder}",
+        "userDataDir": false,
+        "runtimeArgs": [
+          "--profile-directory=debug-profile"
+        ]
+      }
+    ]
+}

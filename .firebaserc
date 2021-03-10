@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "moneycatcha-dev",
+    "dev": "moneycatcha-dev"
+  }
+}

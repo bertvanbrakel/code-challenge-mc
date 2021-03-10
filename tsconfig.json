@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    /* for compatibility see http://kangax.github.io/compat-table/es2016plus/ */
+    "target": "es2018",
+    "module": "commonjs",
+    "strict": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "outDir": "build/js",
+    "moduleResolution": "node",
+    /* allow to import json files (though VS code still complains)*/
+    "resolveJsonModule": false,
+    /* Removes warnings about modules and implicit 'any' (looking at you @formschema/native)*/
+    "noImplicitAny": false,
+    "experimentalDecorators": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["jest"],
+    "typeRoots": ["./node_modules/@types", "./src/typings"],
+    "lib": ["es2018", "dom", "dom.iterable", "scripthost"],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "tests/**/*.ts", "bin/*.ts"],
+  "exclude": ["node_modules", "build"]
+}
